@@ -5,7 +5,7 @@ Updated November 26, 2026. The source is Sarah’s supplied 52-idea list. Propos
 ## Recent work
 
 - **#18** Damage Claim Evidence & Timeline Builder — completed and publicly available November 23, 2026; [repository](https://github.com/fullSDak/damage-claim-evidence-builder). The recorded local test run passed 35 tests; demo is a text walkthrough.
-- **#27** Pre-Arrival Vibe & Reality Check — completed prototype, source and 53-test record in this repository. Delivery: [case study](CASE_STUDY.md), [walkthrough](DEMO.md), [test record](TEST_RESULTS.md). Runtime is deterministic and synthetic; no live integrations.
+- **#27** Pre-Arrival Vibe & Reality Check — completed and publicly available November 26, 2026; [repository](https://github.com/fullSDak/pre-arrival-reality-check). Delivery: [case study](CASE_STUDY.md), [walkthrough](DEMO.md), [test record](TEST_RESULTS.md). Runtime is deterministic and synthetic; no live integrations.
 - **Proposed next:** #40 Auto-Dispatched Turnover & Cleaner Coordinator, subject to a fresh duplicate check. It offers a different operations-and-scheduling problem from #18 and #27, with relevant product and program trade-offs; demand and commercial claims remain hypotheses.
 - Two runs weekly were requested. The record does not confirm schedule status. Disable an existing verified schedule only after all 52 are complete or explicitly skipped by Sarah.
 
@@ -37,7 +37,7 @@ Updated November 26, 2026. The source is Sarah’s supplied 52-idea list. Propos
 | 24 | Monthly Owner Statement & Profit Narrator | Unverified | Check prior work before selection |
 | 25 | Listing Photo Drift & Wear Detector | Unverified | Check prior work before selection |
 | 26 | Guest Screening & Frictionless ID/Deposit Flow | Unverified | Check prior work before selection |
-| 27 | Pre-Arrival Vibe & Reality Check Agent | Complete, local prototype | This repository; 53 tests passed |
+| 27 | Pre-Arrival Vibe & Reality Check Agent | Complete, public | [Repository](https://github.com/fullSDak/pre-arrival-reality-check); 53 tests passed |
 | 28 | Smart Arrival & Troubleshooting Companion | Unverified | Check prior work before selection |
 | 29 | Remote-Work Connectivity & Setup Verifier | Unverified | Check prior work before selection |
 | 30 | Pack-Lighter Home-Gear Matcher | Unverified | Check prior work before selection |
