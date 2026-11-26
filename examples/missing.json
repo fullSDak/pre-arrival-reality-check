@@ -1,0 +1,22 @@
+{
+  "listing_id": "fictional-missing-data-27",
+  "as_of": "2026-04-10",
+  "question": "What can we tell about the entry and sleeping arrangements?",
+  "topics": ["step_free_entry", "family_sleep"],
+  "sources": [
+    {
+      "id": "old-route",
+      "source_type": "host_disclosure",
+      "date": "2024-01-04",
+      "text": "Fabricated older host note: The entry route used to be level.",
+      "assertions": [{"topic": "step_free_entry", "stance": "supports"}]
+    },
+    {
+      "id": "unused-map",
+      "source_type": "map",
+      "date": "2026-03-12",
+      "text": "Fabricated manual map: A fictional stop is sketched near the fictional building.",
+      "assertions": [{"topic": "public_transit", "stance": "supports"}]
+    }
+  ]
+}

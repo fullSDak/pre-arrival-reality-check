@@ -1,0 +1,70 @@
+# Test results
+
+Run November 26, 2026, in the Manus sandbox using Python 3.12.3. All fixtures are synthetic. Command:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
+```
+
+These tests cover deterministic rules, not real-world accuracy, source authenticity, suitability or a live product. Time and platform results can vary. The full captured run follows.
+
+```text
+test_current_concern_is_reported_and_cites_its_source (test_adversarial.AdversarialCLITests.test_current_concern_is_reported_and_cites_its_source) ... ok
+test_current_support_and_concern_conflict_and_both_ids_are_present (test_adversarial.AdversarialCLITests.test_current_support_and_concern_conflict_and_both_ids_are_present) ... ok
+test_current_support_is_not_verified_and_cites_its_source (test_adversarial.AdversarialCLITests.test_current_support_is_not_verified_and_cites_its_source) ... ok
+test_cutoff_includes_today_and_exactly_365_days (test_adversarial.AdversarialCLITests.test_cutoff_includes_today_and_exactly_365_days) ... ok
+test_discloses_manual_unverified_nature_of_input (test_adversarial.AdversarialCLITests.test_discloses_manual_unverified_nature_of_input) ... ok
+test_existing_output_symlink_does_not_overwrite_its_target (test_adversarial.AdversarialCLITests.test_existing_output_symlink_does_not_overwrite_its_target) ... ok
+test_input_cannot_be_used_as_an_existing_output (test_adversarial.AdversarialCLITests.test_input_cannot_be_used_as_an_existing_output) ... ok
+test_malformed_schema_and_invalid_json_fail_without_traceback (test_adversarial.AdversarialCLITests.test_malformed_schema_and_invalid_json_fail_without_traceback) ... ok
+test_missing_sources_is_insufficient_for_each_topic (test_adversarial.AdversarialCLITests.test_missing_sources_is_insufficient_for_each_topic) ... ok
+test_multiple_requested_topics_can_have_different_statuses (test_adversarial.AdversarialCLITests.test_multiple_requested_topics_can_have_different_statuses) ... ok
+test_new_output_file_is_written_and_existing_file_is_not_overwritten (test_adversarial.AdversarialCLITests.test_new_output_file_is_written_and_existing_file_is_not_overwritten) ... ok
+test_no_fabricated_source_id_tokens (test_adversarial.AdversarialCLITests.test_no_fabricated_source_id_tokens) ... ok
+test_noncurrent_concern_does_not_create_a_conflict_with_current_support (test_adversarial.AdversarialCLITests.test_noncurrent_concern_does_not_create_a_conflict_with_current_support) ... ok
+test_other_topic_five_star_review_cannot_prove_quiet_or_accessibility (test_adversarial.AdversarialCLITests.test_other_topic_five_star_review_cannot_prove_quiet_or_accessibility) ... ok
+test_stale_unknown_and_future_are_flagged_not_promoted (test_adversarial.AdversarialCLITests.test_stale_unknown_and_future_are_flagged_not_promoted) ... ok
+test_unclear_assertion_is_not_positive_or_negative_evidence (test_adversarial.AdversarialCLITests.test_unclear_assertion_is_not_positive_or_negative_evidence) ... ok
+test_untrusted_markup_and_transcript_instruction_do_not_take_control (test_adversarial.AdversarialCLITests.test_untrusted_markup_and_transcript_instruction_do_not_take_control) ... ok
+test_365_day_boundary_inclusive (test_core.EvidenceTests.test_365_day_boundary_inclusive) ... ok
+test_concern_only (test_core.EvidenceTests.test_concern_only) ... ok
+test_conflicting_claims_cite_both_sources (test_core.EvidenceTests.test_conflicting_claims_cite_both_sources) ... ok
+test_family_fixture_reports_conflict_and_provenance (test_core.EvidenceTests.test_family_fixture_reports_conflict_and_provenance) ... ok
+test_future_and_stale_support_do_not_conflict_with_current_concern (test_core.EvidenceTests.test_future_and_stale_support_do_not_conflict_with_current_concern) ... ok
+test_host_questions_for_all_requested_topics (test_core.EvidenceTests.test_host_questions_for_all_requested_topics) ... ok
+test_input_order_not_date_order (test_core.EvidenceTests.test_input_order_not_date_order) ... ok
+test_missing_fixture_does_not_turn_absence_into_concern (test_core.EvidenceTests.test_missing_fixture_does_not_turn_absence_into_concern) ... ok
+test_neutral_review_and_proximity_do_not_infer_topic (test_core.EvidenceTests.test_neutral_review_and_proximity_do_not_infer_topic) ... ok
+test_no_sources_is_insufficient_not_negative (test_core.EvidenceTests.test_no_sources_is_insufficient_not_negative) ... ok
+test_partially_unrequested_assertions_are_listed_but_not_used (test_core.EvidenceTests.test_partially_unrequested_assertions_are_listed_but_not_used) ... ok
+test_stale_unknown_future_excluded_and_all_shown (test_core.EvidenceTests.test_stale_unknown_future_excluded_and_all_shown) ... ok
+test_support_only (test_core.EvidenceTests.test_support_only) ... ok
+test_truncation_marked_and_excerpt_preserved (test_core.EvidenceTests.test_truncation_marked_and_excerpt_preserved) ... ok
+test_two_stances_from_one_source_not_counted_twice (test_core.EvidenceTests.test_two_stances_from_one_source_not_counted_twice) ... ok
+test_unclear_only_is_insufficient_with_citation (test_core.EvidenceTests.test_unclear_only_is_insufficient_with_citation) ... ok
+test_cli_create_new_file_and_refuse_overwrite (test_core.SecurityAndCliTests.test_cli_create_new_file_and_refuse_overwrite) ... ok
+test_cli_invalid_input_is_clean_error_and_does_not_create_output (test_core.SecurityAndCliTests.test_cli_invalid_input_is_clean_error_and_does_not_create_output) ... ok
+test_cli_refuses_existing_or_dangling_symlink_output (test_core.SecurityAndCliTests.test_cli_refuses_existing_or_dangling_symlink_output) ... ok
+test_cli_refuses_overwriting_input (test_core.SecurityAndCliTests.test_cli_refuses_overwriting_input) ... ok
+test_cli_stdout_example (test_core.SecurityAndCliTests.test_cli_stdout_example) ... ok
+test_hostile_text_cannot_form_markdown_html_or_autolinks (test_core.SecurityAndCliTests.test_hostile_text_cannot_form_markdown_html_or_autolinks) ... ok
+test_surrogates_and_unicode_controls_are_not_emitted (test_core.SecurityAndCliTests.test_surrogates_and_unicode_controls_are_not_emitted) ... ok
+test_bounds (test_core.ValidationTests.test_bounds) ... ok
+test_date_format_and_calendar (test_core.ValidationTests.test_date_format_and_calendar) ... ok
+test_duplicate_assertion (test_core.ValidationTests.test_duplicate_assertion) ... ok
+test_duplicate_json_key_rejected_at_any_depth (test_core.ValidationTests.test_duplicate_json_key_rejected_at_any_depth) ... ok
+test_duplicate_source_id_even_with_outer_whitespace (test_core.ValidationTests.test_duplicate_source_id_even_with_outer_whitespace) ... ok
+test_duplicate_topics (test_core.ValidationTests.test_duplicate_topics) ... ok
+test_nonempty_required_text_and_topics (test_core.ValidationTests.test_nonempty_required_text_and_topics) ... ok
+test_reject_bad_json_utf8_numeric_nan_and_oversized_file (test_core.ValidationTests.test_reject_bad_json_utf8_numeric_nan_and_oversized_file) ... ok
+test_required_field (test_core.ValidationTests.test_required_field) ... ok
+test_unexpected_field (test_core.ValidationTests.test_unexpected_field) ... ok
+test_wrong_types_and_disallowed_values (test_core.ValidationTests.test_wrong_types_and_disallowed_values) ... ok
+test_blank_text_is_visible_but_not_counted (test_missing_source.MissingSourceTests.test_blank_text_is_visible_but_not_counted) ... ok
+test_readable_manual_text_is_still_unverified_support (test_missing_source.MissingSourceTests.test_readable_manual_text_is_still_unverified_support) ... ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 3.391s
+
+OK
+```
